@@ -1,0 +1,62 @@
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a2e; /* Dark purple/blue background */
+            color: #e0e0e0; /* Light grey text */
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+        }
+        .gradient-button {
+            background: linear-gradient(to right, #ff6b6b, #ee5253); /* Reddish gradient */
+            transition: transform 0.2s ease-in-out;
+        }
+        .gradient-button:hover {
+            transform: translateY(-2px);
+        }
+        .card-bg {
+            background-color: #2a2a4a; /* Slightly lighter dark purple/blue for cards */
+        }
+        .section-heading {
+            color: #ffffff; /* White heading text */
+            font-weight: 700;
+        }
+
+        /* Animation classes */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .animate-fade-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .animate-fade-in-left.is-visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .animate-fade-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .animate-fade-in-right.is-visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .animate-scale-in {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .animate-scale-in.is-visible {
+            opacity: 1;
+            transform: scale(1);
+        }
