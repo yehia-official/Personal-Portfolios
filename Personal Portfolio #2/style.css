@@ -1,129 +1,62 @@
- body {
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
             font-family: 'Inter', sans-serif;
-            background-color: #1a1a2e; /* Dark background color inspired by the image */
-            color: #e0e0e0; /* Light text color */
+            background-color: #1a1a2e; /* Dark purple/blue background */
+            color: #e0e0e0; /* Light grey text */
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
         }
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
+        .gradient-button {
+            background: linear-gradient(to right, #ff6b6b, #ee5253); /* Reddish gradient */
+            transition: transform 0.2s ease-in-out;
         }
-        ::-webkit-scrollbar-track {
-            background: #2a2a4a; /* Scrollbar track color */
-            border-radius: 10px;
+        .gradient-button:hover {
+            transform: translateY(-2px);
         }
-        ::-webkit-scrollbar-thumb {
-            background: #e94560; /* Scrollbar thumb color (dark red) */
-            border-radius: 10px;
+        .card-bg {
+            background-color: #2a2a4a; /* Slightly lighter dark purple/blue for cards */
         }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #ff6b81; /* Scrollbar thumb color on hover */
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fade-in {
-            animation: fadeIn 0.8s ease-out forwards;
-        }
-        .animate-slide-in-up {
-            animation: slideInUp 0.8s ease-out forwards;
-        }
-        .delay-100 { animation-delay: 0.1s; }
-        .delay-200 { animation-delay: 0.2s; }
-        .delay-300 { animation-delay: 0.3s; }
-        .delay-400 { animation-delay: 0.4s; }
-        .delay-500 { animation-delay: 0.5s; }
-
-        /* Custom styles for the dotted line and circles */
-        .dotted-line-container {
-            position: relative;
-            width: 20px; /* Container width for the line */
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
+        .section-heading {
+            color: #ffffff; /* White heading text */
+            font-weight: 700;
         }
 
-        .dotted-line {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            width: 2px;
-            height: 100%;
-            background-color: #e94560; /* Dark red line color */
-            transform: translateX(-50%);
-            background-image: linear-gradient(to bottom, #e94560 2px, transparent 2px, transparent 10px);
-            background-size: 100% 10px;
-        }
-
-        .circle {
-            width: 12px;
-            height: 12px;
-            background-color: #e94560; /* Dark red circle color */
-            border-radius: 50%;
-            position: relative;
-            z-index: 10;
-        }
-
-        /* Modal specific styles */
-        .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.75);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
+        /* Animation classes */
+        .animate-on-scroll {
             opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease, visibility 0.3s ease;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
-
-        .modal-overlay.open {
+        .animate-on-scroll.is-visible {
             opacity: 1;
-            visibility: visible;
-        }
-
-        .modal-content {
-            background-color: #2a2a4a;
-            padding: 2rem;
-            border-radius: 0.75rem;
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-            max-width: 80%;
-            max-height: 80%;
-            overflow-y: auto;
-            position: relative;
-            transform: translateY(-20px);
-            transition: transform 0.3s ease;
-            color: #e0e0e0; /* Text color inside modal */
-        }
-
-        .modal-overlay.open .modal-content {
             transform: translateY(0);
         }
 
-        .modal-close-button {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: #e0e0e0;
-            cursor: pointer;
-            transition: color 0.2s ease;
+        .animate-fade-in-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .animate-fade-in-left.is-visible {
+            opacity: 1;
+            transform: translateX(0);
         }
 
-        .modal-close-button:hover {
-            color: #e94560;
+        .animate-fade-in-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .animate-fade-in-right.is-visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .animate-scale-in {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .animate-scale-in.is-visible {
+            opacity: 1;
+            transform: scale(1);
         }
