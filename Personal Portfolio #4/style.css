@@ -1,0 +1,80 @@
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light gray background */
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+        /* Custom styles for the timeline */
+        .timeline-item {
+            position: relative;
+            padding-bottom: 2rem;
+            padding-left: 2rem; /* Changed to left for LTR */
+            border-left: 2px solid #e5e7eb; /* Light gray border for timeline */
+            margin-left: 1.5rem; /* Changed to left for LTR */
+        }
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -11px; /* Adjust to center the dot on the line for LTR */
+            width: 20px;
+            height: 20px;
+            background-color: #ef4444; /* Red dot */
+            border-radius: 50%;
+            border: 3px solid #f8f8f8; /* Match body background */
+            z-index: 10;
+        }
+        .timeline-item:first-child::before {
+            top: 0; /* Align first dot to the top */
+        }
+        .timeline-item:last-child {
+            border-left: none; /* Remove border for the last item */
+        }
+        /* Hide scrollbar for aesthetic purposes */
+        body::-webkit-scrollbar {
+            display: none;
+        }
+        body {
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
+
+        /* Custom animations */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-up.animate {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .fade-in-right {
+            opacity: 0;
+            transform: translateX(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-right.animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .fade-in-left {
+            opacity: 0;
+            transform: translateX(-20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-left.animate {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .scale-in {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .scale-in.animate {
+            opacity: 1;
+            transform: scale(1);
+        }

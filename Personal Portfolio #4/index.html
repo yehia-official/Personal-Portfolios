@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahya's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-white shadow-sm py-4 px-6 md:px-12 lg:px-24 flex justify-between items-center">
+        <div class="text-xl font-bold text-gray-900 rounded-md">yehia</div>
+        <nav class="hidden md:flex space-x-8 text-sm font-medium">
+            <a href="#home" class="text-gray-900 hover:text-red-500 transition duration-300 rounded-md">HOME</a>
+            <a href="#about" class="text-gray-600 hover:text-red-500 transition duration-300 rounded-md">ABOUT</a>
+            <a href="#experience" class="text-gray-600 hover:text-red-500 transition duration-300 rounded-md">EXPERIENCE</a>
+            <a href="#skills" class="text-gray-600 hover:text-red-500 transition duration-300 rounded-md">SKILLS</a>
+            <a href="#portfolio" class="text-gray-600 hover:text-red-500 transition duration-300 rounded-md">PORTFOLIO</a>
+            <a href="#services" class="text-gray-600 hover:text-red-500 transition duration-300 rounded-md">SERVICES</a>
+            <a href="#blog" class="text-gray-600 hover:text-red-500 transition duration-300 rounded-md">BLOG</a>
+            <a href="#contact" class="text-gray-600 hover:text-red-500 transition duration-300 rounded-md">CONTACT</a>
+        </nav>
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md py-4 px-6">
+        <nav class="flex flex-col space-y-4 text-sm font-medium">
+            <a href="#home" class="text-gray-900 hover:text-red-500 transition duration-300 rounded-md">HOME</a>
+            <a href="#about" class="text-gray-600 hover:text-red-500 transition duration-300 rounded-md">ABOUT</a>
+            <a href="#experience" class="text-gray-600 hover:text-red-500 transition duration-300 rounded-md">EXPERIENCE</a>
+            <a href="#skills" class="text-gray-600 hover:text-red-500 transition duration-300 rounded-md">SKILLS</a>
+            <a href="#portfolio" class="text-gray-600 hover:text-red-500 transition duration-300 rounded-md">PORTFOLIO</a>
+            <a href="#services" class="text-gray-600 hover:text-red-500 transition duration-300 rounded-md">SERVICES</a>
+            <a href="#blog" class="text-gray-600 hover:text-red-500 transition duration-300 rounded-md">BLOG</a>
+            <a href="#contact" class="text-gray-600 hover:text-red-500 transition duration-300 rounded-md">CONTACT</a>
+        </nav>
+    </div>
+
+    <section id="home" class="container mx-auto px-6 md:px-12 lg:px-24 py-16 flex flex-col md:flex-row items-center justify-between">
+        <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
+            <h1 class="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4 rounded-md fade-in-up">
+                <span class="text-red-500">HI!</span> I'M YAHYA
+            </h1>
+            <h2 class="text-2xl lg:text-3xl font-semibold text-gray-700 mb-6 rounded-md fade-in-up" style="transition-delay: 0.2s;">
+                I AM A WEB DEVELOPER
+            </h2>
+            <p class="text-gray-600 leading-relaxed mb-8 max-w-lg mx-auto md:mx-0 rounded-md fade-in-up" style="transition-delay: 0.4s;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="flex justify-center md:justify-start space-x-4 text-gray-600 text-2xl rounded-md fade-in-up" style="transition-delay: 0.6s;">
+                <a href="#" class="hover:text-red-500 transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-red-500 transition duration-300"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-red-500 transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="hover:text-red-500 transition duration-300"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center md:justify-end">
+            <img src="me.webp" alt="[Image of Yahya]" class="w-full max-w-md h-auto object-cover rounded-full shadow-lg scale-in">
+        </div>
+    </section>
+
+    <section id="about" class="container mx-auto px-6 md:px-12 lg:px-24 py-16 flex flex-col md:flex-row items-center justify-between bg-white mt-10 rounded-lg shadow-md">
+        <div class="md:w-1/2 flex justify-center md:justify-start mb-10 md:mb-0">
+            <img src="me.webp" alt="[Image of Yahya]" class="w-full max-w-md h-auto object-cover rounded-full shadow-lg scale-in">
+        </div>
+        <div class="md:w-1/2 text-center md:text-left">
+            <span class="text-red-500 text-sm font-semibold mb-2 block rounded-md fade-in-right">ABOUT ME</span>
+            <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-4 rounded-md fade-in-right" style="transition-delay: 0.2s;">
+                LET'S DO SOME AWESOME <br> STUFF TOGETHER.
+            </h2>
+            <h3 class="text-xl font-semibold text-gray-700 mb-4 rounded-md fade-in-right" style="transition-delay: 0.4s;">
+                UI/UX Designer & Web Developer
+            </h3>
+            <p class="text-gray-600 leading-relaxed mb-8 rounded-md fade-in-right" style="transition-delay: 0.6s;">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <button class="bg-red-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-red-600 transition duration-300 shadow-md rounded-md fade-in-right" style="transition-delay: 0.8s;">
+                DOWNLOAD CV
+            </button>
+        </div>
+    </section>
+
+    <section id="experience" class="container mx-auto px-6 md:px-12 lg:px-24 py-16">
+        <div class="text-center mb-12">
+            <span class="text-red-500 text-sm font-semibold mb-2 block rounded-md fade-in-up">QUALIFICATION</span>
+            <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 rounded-md fade-in-up" style="transition-delay: 0.2s;">
+                MY EXPERIENCE
+            </h2>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-center items-start md:space-x-12">
+            <div class="md:w-1/2 lg:w-1/3 mb-10 md:mb-0 fade-in-left">
+                <div class="timeline-item">
+                    <div class="flex items-center mb-2">
+                        <span class="text-gray-600 font-semibold text-sm rounded-md">2007-2008</span>
+                        <span class="bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full ml-4 rounded-md">BEHANCE</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2 rounded-md">UNIQUE WEB DESIGN</h3>
+                    <p class="text-gray-600 leading-relaxed rounded-md">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+
+            <div class="md:w-1/2 lg:w-1/3 fade-in-right" style="transition-delay: 0.2s;">
+                <div class="timeline-item">
+                    <div class="flex items-center mb-2">
+                        <span class="text-gray-600 font-semibold text-sm rounded-md">2013-2019</span>
+                        <span class="bg-red-500 text-white text-xs font-bold px-3 py-1 rounded-full ml-4 rounded-md">THEMEFOREST</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2 rounded-md">PRODUCT DESIGNER</h3>
+                    <p class="text-gray-600 leading-relaxed rounded-md">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="container mx-auto px-6 md:px-12 lg:px-24 py-16 bg-white mt-10 rounded-lg shadow-md">
+        <div class="text-center mb-12">
+            <span class="text-red-500 text-sm font-semibold mb-2 block rounded-md fade-in-up">WHAT I DO</span>
+            <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 rounded-md fade-in-up" style="transition-delay: 0.2s;">
+                MY SKILLS
+            </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 fade-in-up" style="transition-delay: 0.4s;">
+                <div class="flex items-center mb-4">
+                    <i class="fab fa-html5 text-red-500 text-3xl mr-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-900">HTML5</h3>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-red-500 h-2.5 rounded-full" style="width: 95%;"></div>
+                </div>
+                <p class="text-sm text-gray-600 mt-2">Advanced</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 fade-in-up" style="transition-delay: 0.6s;">
+                <div class="flex items-center mb-4">
+                    <i class="fab fa-css3-alt text-blue-500 text-3xl mr-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-900">CSS3 & Tailwind CSS</h3>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-blue-500 h-2.5 rounded-full" style="width: 90%;"></div>
+                </div>
+                <p class="text-sm text-gray-600 mt-2">Advanced</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 fade-in-up" style="transition-delay: 0.8s;">
+                <div class="flex items-center mb-4">
+                    <i class="fab fa-js-square text-yellow-500 text-3xl mr-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-900">JavaScript</h3>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-yellow-500 h-2.5 rounded-full" style="width: 85%;"></div>
+                </div>
+                <p class="text-sm text-gray-600 mt-2">Intermediate</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 fade-in-up" style="transition-delay: 1.0s;">
+                <div class="flex items-center mb-4">
+                    <i class="fab fa-react text-cyan-500 text-3xl mr-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-900">React</h3>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-cyan-500 h-2.5 rounded-full" style="width: 80%;"></div>
+                </div>
+                <p class="text-sm text-gray-600 mt-2">Intermediate</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 fade-in-up" style="transition-delay: 1.2s;">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-database text-green-500 text-3xl mr-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-900">Database (SQL/NoSQL)</h3>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-green-500 h-2.5 rounded-full" style="width: 75%;"></div>
+                </div>
+                <p class="text-sm text-gray-600 mt-2">Basic</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 fade-in-up" style="transition-delay: 1.4s;">
+                <div class="flex items-center mb-4">
+                    <i class="fab fa-git-alt text-orange-500 text-3xl mr-4"></i>
+                    <h3 class="text-xl font-semibold text-gray-900">Version Control (Git)</h3>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                    <div class="bg-orange-500 h-2.5 rounded-full" style="width: 88%;"></div>
+                </div>
+                <p class="text-sm text-gray-600 mt-2">Proficient</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="container mx-auto px-6 md:px-12 lg:px-24 py-16">
+        <div class="text-center mb-12">
+            <span class="text-red-500 text-sm font-semibold mb-2 block rounded-md fade-in-up">MY WORK</span>
+            <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 rounded-md fade-in-up" style="transition-delay: 0.2s;">
+                LATEST PROJECTS
+            </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden fade-in-up" style="transition-delay: 0.4s;">
+                <img src="https://placehold.co/600x400/ef4444/ffffff?text=Project+1" alt="[Image of Project 1]" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">E-commerce Website</h3>
+                    <p class="text-gray-600 text-sm">A fully functional e-commerce platform built with React and Node.js.</p>
+                    <a href="#" class="text-red-500 hover:underline mt-4 inline-block">View Project <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden fade-in-up" style="transition-delay: 0.6s;">
+                <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Project+2" alt="[Image of Project 2]" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Mobile App UI Design</h3>
+                    <p class="text-gray-600 text-sm">Intuitive and modern UI/UX design for a mobile application.</p>
+                    <a href="#" class="text-red-500 hover:underline mt-4 inline-block">View Project <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden fade-in-up" style="transition-delay: 0.8s;">
+                <img src="https://placehold.co/600x400/10b981/ffffff?text=Project+3" alt="[Image of Project 3]" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Data Visualization Dashboard</h3>
+                    <p class="text-gray-600 text-sm">Interactive dashboard using D3.js for complex data representation.</p>
+                    <a href="#" class="text-red-500 hover:underline mt-4 inline-block">View Project <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="container mx-auto px-6 md:px-12 lg:px-24 py-16 bg-white mt-10 rounded-lg shadow-md">
+        <div class="text-center mb-12">
+            <span class="text-red-500 text-sm font-semibold mb-2 block rounded-md fade-in-up">WHAT I OFFER</span>
+            <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 rounded-md fade-in-up" style="transition-delay: 0.2s;">
+                MY SERVICES
+            </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm text-center fade-in-up" style="transition-delay: 0.4s;">
+                <i class="fas fa-laptop-code text-red-500 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Web Development</h3>
+                <p class="text-gray-600 text-sm">Building responsive and high-performance websites.</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm text-center fade-in-up" style="transition-delay: 0.6s;">
+                <i class="fas fa-palette text-blue-500 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">UI/UX Design</h3>
+                <p class="text-gray-600 text-sm">Creating intuitive and visually appealing user interfaces.</p>
+            </div>
+            <div class="bg-gray-50 p-6 rounded-lg shadow-sm text-center fade-in-up" style="transition-delay: 0.8s;">
+                <i class="fas fa-mobile-alt text-green-500 text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Mobile App Development</h3>
+                <p class="text-gray-600 text-sm">Developing cross-platform mobile applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="container mx-auto px-6 md:px-12 lg:px-24 py-16">
+        <div class="text-center mb-12">
+            <span class="text-red-500 text-sm font-semibold mb-2 block rounded-md fade-in-up">LATEST NEWS</span>
+            <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 rounded-md fade-in-up" style="transition-delay: 0.2s;">
+                MY BLOG
+            </h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden fade-in-up" style="transition-delay: 0.4s;">
+                <img src="https://placehold.co/600x400/8b5cf6/ffffff?text=Blog+Post+1" alt="[Image of Blog Post 1]" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">The Future of Web Development</h3>
+                    <p class="text-gray-600 text-sm">Exploring new trends and technologies in web development.</p>
+                    <a href="#" class="text-red-500 hover:underline mt-4 inline-block">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden fade-in-up" style="transition-delay: 0.6s;">
+                <img src="https://placehold.co/600x400/ec4899/ffffff?text=Blog+Post+2" alt="[Image of Blog Post 2]" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Mastering Responsive Design</h3>
+                    <p class="text-gray-600 text-sm">Tips and tricks for creating truly responsive layouts.</p>
+                    <a href="#" class="text-red-500 hover:underline mt-4 inline-block">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden fade-in-up" style="transition-delay: 0.8s;">
+                <img src="https://placehold.co/600x400/f59e0b/ffffff?text=Blog+Post+3" alt="[Image of Blog Post 3]" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">The Power of Clean Code</h3>
+                    <p class="text-gray-600 text-sm">Why writing clean, maintainable code is crucial.</p>
+                    <a href="#" class="text-red-500 hover:underline mt-4 inline-block">Read More <i class="fas fa-arrow-right text-xs ml-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container mx-auto px-6 md:px-12 lg:px-24 py-16 bg-white mt-10 rounded-lg shadow-md">
+        <div class="text-center mb-12">
+            <span class="text-red-500 text-sm font-semibold mb-2 block rounded-md fade-in-up">GET IN TOUCH</span>
+            <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 rounded-md fade-in-up" style="transition-delay: 0.2s;">
+                CONTACT ME
+            </h2>
+        </div>
+        <div class="max-w-xl mx-auto">
+            <form class="space-y-6">
+                <div class="fade-in-up" style="transition-delay: 0.4s;">
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500">
+                </div>
+                <div class="fade-in-up" style="transition-delay: 0.6s;">
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500">
+                </div>
+                <div class="fade-in-up" style="transition-delay: 0.8s;">
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="5" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-red-500 focus:border-red-500"></textarea>
+                </div>
+                <div class="text-center fade-in-up" style="transition-delay: 1.0s;">
+                    <button type="submit" class="bg-red-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-red-600 transition duration-300 shadow-md">
+                        SEND MESSAGE
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8 mt-10">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24 text-center">
+            <p class="text-sm">&copy; 2025 Yahya's Portfolio. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 text-xl mt-4">
+                <a href="#" class="hover:text-red-500 transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-red-500 transition duration-300"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-red-500 transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="hover:text-red-500 transition duration-300"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+<script src="jss.js"></script>
+</body>
+</html>
