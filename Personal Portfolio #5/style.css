@@ -1,0 +1,143 @@
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light grey background */
+            color: #333;
+        }
+        .bg-hero {
+            background-color: #2c2f33; /* Dark background for hero section */
+        }
+        .text-primary-orange {
+            color: #ff6a00; /* Orange accent color */
+        }
+        .bg-primary-orange {
+            background-color: #ff6a00;
+        }
+        .progress-bar-container {
+            background-color: #e0e0e0;
+            border-radius: 9999px;
+            height: 8px;
+            overflow: hidden;
+        }
+        .progress-bar {
+            height: 100%;
+            background-color: #ff6a00;
+            border-radius: 9999px;
+        }
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 20px; /* Changed to left for LTR */
+            margin-bottom: 30px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0; /* Changed to left for LTR */
+            top: 0;
+            height: 100%;
+            width: 2px;
+            background-color: #e0e0e0;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: -6px; /* Changed to left for LTR */
+            top: 0;
+            width: 14px;
+            height: 14px;
+            background-color: #ff6a00;
+            border-radius: 50%;
+            border: 2px solid #fff;
+        }
+        .timeline-item:last-child::before {
+            height: calc(100% - 14px); /* Adjust to make the line end at the circle */
+        }
+
+        /* Custom styles for image hover effect */
+        .portfolio-item-overlay {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        .portfolio-item:hover .portfolio-item-overlay {
+            opacity: 1;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .animate-scaleIn {
+            animation: scaleIn 0.6s ease-out forwards;
+        }
+
+        /* Hidden by default for scroll reveal */
+        .reveal-item {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .reveal-item.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Modal styles */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        }
+        .modal-overlay.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-content {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            transform: translateY(-20px);
+            transition: transform 0.3s ease-in-out;
+        }
+        .modal-overlay.show .modal-content {
+            transform: translateY(0);
+        }

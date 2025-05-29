@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahya - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-white shadow-sm py-4 fixed w-full z-10">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">Yahya.</div>
+            <nav>
+                <ul class="hidden md:flex space-x-6 text-gray-600">
+                    <li><a href="#home" class="hover:text-primary-orange transition duration-300">Home</a></li>
+                    <li><a href="#about" class="hover:text-primary-orange transition duration-300">About</a></li>
+                    <li><a href="#services" class="hover:text-primary-orange transition duration-300">Services</a></li>
+                    <li><a href="#experience" class="hover:text-primary-orange transition duration-300">Experience</a></li>
+                    <li><a href="#portfolio" class="hover:text-primary-orange transition duration-300">Portfolio</a></li>
+                    <li><a href="#pricing" class="hover:text-primary-orange transition duration-300">Pricing</a></li>
+                    <li><a href="#reviews" class="hover:text-primary-orange transition duration-300">Reviews</a></li>
+                    <li><a href="#blog" class="hover:text-primary-orange transition duration-300">Blog</a></li>
+                    <li><a href="#contact" class="hover:text-primary-orange transition duration-300">Contact</a></li>
+                </ul>
+                <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </nav>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white mt-2 py-2 shadow-lg">
+            <ul class="flex flex-col items-center space-y-2 text-gray-700">
+                <li><a href="#home" class="block py-2 hover:text-primary-orange">Home</a></li>
+                <li><a href="#about" class="block py-2 hover:text-primary-orange">About</a></li>
+                <li><a href="#services" class="block py-2 hover:text-primary-orange">Services</a></li>
+                <li><a href="#experience" class="block py-2 hover:text-primary-orange">Experience</a></li>
+                <li><a href="#portfolio" class="block py-2 hover:text-primary-orange">Portfolio</a></li>
+                <li><a href="#pricing" class="block py-2 hover:text-primary-orange">Pricing</a></li>
+                <li><a href="#reviews" class="block py-2 hover:text-primary-orange">Reviews</a></li>
+                <li><a href="#blog" class="block py-2 hover:text-primary-orange">Blog</a></li>
+                <li><a href="#contact" class="block py-2 hover:text-primary-orange">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <section id="home" class="bg-hero text-white py-16 md:py-24 text-center relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-purple-800 to-blue-900 opacity-50"></div>
+            <div class="container mx-auto px-4 relative z-10">
+                <h1 class="text-4xl md:text-5xl font-bold mb-2 animate-fadeInUp" style="animation-delay: 0.2s;">Yahya</h1>
+                <p class="text-xl md:text-2xl font-light mb-6 animate-fadeInUp" style="animation-delay: 0.4s;">UI/UX Designer / Web Developer</p>
+                <div class="flex justify-center space-x-4 mb-8 animate-fadeInUp" style="animation-delay: 0.6s;">
+                    <a href="#" class="text-white hover:text-primary-orange transition duration-300 text-2xl"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white hover:text-primary-orange transition duration-300 text-2xl"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white hover:text-primary-orange transition duration-300 text-2xl"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white hover:text-primary-orange transition duration-300 text-2xl"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <button class="bg-primary-orange text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-opacity-80 transition duration-300 animate-fadeInUp" style="animation-delay: 0.8s;">
+                    Hire Me
+                </button>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12 reveal-item">About Me</h2>
+                <div class="flex flex-col md:flex-row items-center md:space-x-12 reveal-item">
+                    <div class="md:w-1/3 mb-8 md:mb-0">
+                        <img src="me.webp" alt="About Me" class="rounded-lg mx-auto">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl font-semibold mb-4">I'm Yahya, a Web Developer from London.</h3>
+                        <p class="text-gray-700 leading-relaxed mb-6">
+                            I'm a web designer and front-end developer based in London, England. I have a passion for designing and developing clean, elegant, and user-friendly websites. I love working on web projects that make me learn new things and grow.
+                        </p>
+                        <div class="mb-6">
+                            <h4 class="font-semibold text-lg mb-2">Development</h4>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 90%;"></div>
+                            </div>
+                            <span class="text-sm text-gray-600 float-right mt-1">90%</span> </div>
+                        <div>
+                            <h4 class="font-semibold text-lg mb-2">Design</h4>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar" style="width: 85%;"></div>
+                            </div>
+                            <span class="text-sm text-gray-600 float-right mt-1">85%</span> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center reveal-item">
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <i class="fas fa-project-diagram text-primary-orange text-4xl mb-4"></i>
+                        <p class="text-4xl font-bold counter" data-target="198">0</p>
+                        <p class="text-gray-600">Projects Completed</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <i class="fas fa-smile text-primary-orange text-4xl mb-4"></i>
+                        <p class="text-4xl font-bold counter" data-target="5670">0</p>
+                        <p class="text-gray-600">Happy Clients</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <i class="fas fa-heart text-primary-orange text-4xl mb-4"></i>
+                        <p class="text-4xl font-bold counter" data-target="427">0</p>
+                        <p class="text-gray-600">Reviews</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg card-shadow">
+                        <i class="fas fa-trophy text-primary-orange text-4xl mb-4"></i>
+                        <p class="text-4xl font-bold counter" data-target="35">0</p>
+                        <p class="text-gray-600">Awards Won</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12 reveal-item">Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal-item">
+                    <div class="bg-gray-100 p-8 rounded-lg card-shadow text-center hover:scale-105 transition duration-300">
+                        <i class="fas fa-palette text-primary-orange text-5xl mb-6"></i>
+                        <h3 class="text-xl font-semibold mb-3">UI/UX Design</h3>
+                        <p class="text-gray-700">
+                            I design beautiful, user-friendly interfaces and enjoyable user experiences.
+                        </p>
+                    </div>
+                    <div class="bg-gray-100 p-8 rounded-lg card-shadow text-center hover:scale-105 transition duration-300">
+                        <i class="fas fa-code text-primary-orange text-5xl mb-6"></i>
+                        <h3 class="text-xl font-semibold mb-3">Web Development</h3>
+                        <p class="text-gray-700">
+                            I develop powerful and responsive websites using the latest technologies.
+                        </p>
+                    </div>
+                    <div class="bg-gray-100 p-8 rounded-lg card-shadow text-center hover:scale-105 transition duration-300">
+                        <i class="fas fa-camera text-primary-orange text-5xl mb-6"></i>
+                        <h3 class="text-xl font-semibold mb-3">Photography</h3>
+                        <p class="text-gray-700">
+                            I offer professional photography services for products and events.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12 reveal-item">Experience</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 reveal-item">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6">Academic Experience</h3>
+                        <div class="timeline-item">
+                            <h4 class="font-semibold text-lg">Master's Degree</h4>
+                            <p class="text-gray-600 text-sm mb-1">University of London / 2018 - 2020</p>
+                            <p class="text-gray-700">
+                                Postgraduate studies in Computer Science with a focus on web development.
+                            </p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="font-semibold text-lg">Bachelor's Degree</h4>
+                            <p class="text-gray-600 text-sm mb-1">Cambridge University / 2014 - 2018</p>
+                            <p class="text-gray-700">
+                                Bachelor of Software Engineering.
+                            </p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="font-semibold text-lg">Honours Degree</h4>
+                            <p class="text-gray-600 text-sm mb-1">Oxford College / 2012 - 2014</p>
+                            <p class="text-gray-700">
+                                Diploma in Web Design and Development.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6">Professional Experience</h3>
+                        <div class="timeline-item">
+                            <h4 class="font-semibold text-lg">Web Designer</h4>
+                            <p class="text-gray-600 text-sm mb-1">ABC Company / 2022 - Present</p>
+                            <p class="text-gray-700">
+                                Designing and developing user interfaces for websites and web applications.
+                            </p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="font-semibold text-lg">Front-End Developer</h4>
+                            <p class="text-gray-600 text-sm mb-1">XYZ Company / 2020 - 2022</p>
+                            <p class="text-gray-700">
+                                Building and implementing interactive user interfaces using React and Vue.js.
+                            </p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="font-semibold text-lg">Back-End Developer</h4>
+                            <p class="text-gray-600 text-sm mb-1">PQR Company / 2018 - 2020</p>
+                            <p class="text-gray-700">
+                                Developing APIs and managing databases.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12 reveal-item">Recent Works</h2>
+                <div class="flex justify-center space-x-4 mb-8 reveal-item">
+                    <button class="px-4 py-2 rounded-full bg-primary-orange text-white hover:opacity-80 transition duration-300">All</button>
+                    <button class="px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-primary-orange hover:text-white transition duration-300">Art</button>
+                    <button class="px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-primary-orange hover:text-white transition duration-300">Branding</button>
+                    <button class="px-4 py-2 rounded-full bg-gray-200 text-gray-700 hover:bg-primary-orange hover:text-white transition duration-300">Design</button>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 reveal-item">
+                    <div class="relative rounded-lg overflow-hidden card-shadow portfolio-item hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/400x300/ff6a00/ffffff?text=Project+1" alt="Project 1" class="w-full h-auto">
+                        <div class="absolute inset-0 flex items-center justify-center portfolio-item-overlay">
+                            <h4 class="text-white text-xl font-semibold">Project Title 1</h4>
+                        </div>
+                    </div>
+                    <div class="relative rounded-lg overflow-hidden card-shadow portfolio-item hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/400x300/ff6a00/ffffff?text=Project+2" alt="Project 2" class="w-full h-auto">
+                        <div class="absolute inset-0 flex items-center justify-center portfolio-item-overlay">
+                            <h4 class="text-white text-xl font-semibold">Project Title 2</h4>
+                        </div>
+                    </div>
+                    <div class="relative rounded-lg overflow-hidden card-shadow portfolio-item hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/400x300/ff6a00/ffffff?text=Project+3" alt="Project 3" class="w-full h-auto">
+                        <div class="absolute inset-0 flex items-center justify-center portfolio-item-overlay">
+                            <h4 class="text-white text-xl font-semibold">Project Title 3</h4>
+                        </div>
+                    </div>
+                    <div class="relative rounded-lg overflow-hidden card-shadow portfolio-item hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/400x300/ff6a00/ffffff?text=Project+4" alt="Project 4" class="w-full h-auto">
+                        <div class="absolute inset-0 flex items-center justify-center portfolio-item-overlay">
+                            <h4 class="text-white text-xl font-semibold">Project Title 4</h4>
+                        </div>
+                    </div>
+                    <div class="relative rounded-lg overflow-hidden card-shadow portfolio-item hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/400x300/ff6a00/ffffff?text=Project+5" alt="Project 5" class="w-full h-auto">
+                        <div class="absolute inset-0 flex items-center justify-center portfolio-item-overlay">
+                            <h4 class="text-white text-xl font-semibold">Project Title 5</h4>
+                        </div>
+                    </div>
+                    <div class="relative rounded-lg overflow-hidden card-shadow portfolio-item hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/400x300/ff6a00/ffffff?text=Project+6" alt="Project 6" class="w-full h-auto">
+                        <div class="absolute inset-0 flex items-center justify-center portfolio-item-overlay">
+                            <h4 class="text-white text-xl font-semibold">Project Title 6</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12 reveal-item">
+                    <button class="bg-primary-orange text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-opacity-80 transition duration-300">
+                        View More
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12 reveal-item">Pricing Plans</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal-item">
+                    <div class="bg-white p-8 rounded-lg card-shadow text-center hover:scale-105 transition duration-300">
+                        <i class="fas fa-star text-primary-orange text-5xl mb-6"></i>
+                        <h3 class="text-2xl font-semibold mb-3">Basic</h3>
+                        <p class="text-gray-600 mb-6">A simple and powerful solution for your business.</p>
+                        <p class="text-4xl font-bold text-primary-orange mb-6">$29<span class="text-xl text-gray-500">/month</span></p>
+                        <ul class="text-gray-700 text-left mx-auto max-w-xs mb-8 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Full Support</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 100GB Storage</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Free Updates</li>
+                        </ul>
+                        <button class="bg-primary-orange text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-opacity-80 transition duration-300">
+                            Get Started
+                        </button>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg card-shadow text-center border-2 border-primary-orange hover:scale-105 transition duration-300">
+                        <i class="fas fa-crown text-primary-orange text-5xl mb-6"></i>
+                        <h3 class="text-2xl font-semibold mb-3">Premium</h3>
+                        <p class="text-gray-600 mb-6">A comprehensive solution with additional features.</p>
+                        <p class="text-4xl font-bold text-primary-orange mb-6">$49<span class="text-xl text-gray-500">/month</span></p>
+                        <ul class="text-gray-700 text-left mx-auto max-w-xs mb-8 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Full Support</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> 500GB Storage</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Free Updates</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Advanced Reports</li>
+                        </ul>
+                        <button class="bg-primary-orange text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-opacity-80 transition duration-300">
+                            Get Started
+                        </button>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg card-shadow text-center hover:scale-105 transition duration-300">
+                        <i class="fas fa-rocket text-primary-orange text-5xl mb-6"></i>
+                        <h3 class="text-2xl font-semibold mb-3">Ultimate</h3>
+                        <p class="text-gray-600 mb-6">The best solution for large enterprises.</p>
+                        <p class="text-4xl font-bold text-primary-orange mb-6">$99<span class="text-xl text-gray-500">/month</span></p>
+                        <ul class="text-gray-700 text-left mx-auto max-w-xs mb-8 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Full Support</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Unlimited Storage</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Free Updates</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i> Dedicated Account Manager</li>
+                        </ul>
+                        <button class="bg-primary-orange text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-opacity-80 transition duration-300">
+                            Get Started
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12 reveal-item">Clients & Reviews</h2>
+                <div class="max-w-2xl mx-auto bg-gray-100 p-8 rounded-lg card-shadow text-center reveal-item">
+                    <img src="https://placehold.co/80x80/ff6a00/ffffff?text=JD" alt="John Doe" class="rounded-full mx-auto mb-6 border-2 border-primary-orange">
+                    <h3 class="text-xl font-semibold mb-2">John Doe</h3>
+                    <p class="text-gray-600 mb-4">Marketing Manager, XYZ Company</p>
+                    <p class="text-gray-700 leading-relaxed">
+                        "I enjoyed working with Yahya. He is very professional and makes the process fun and interesting."
+                    </p>
+                </div>
+                <div class="flex justify-center items-center mt-8 space-x-6 reveal-item">
+                    <img src="https://placehold.co/100x50/e0e0e0/333333?text=Logo+1" alt="Client Logo 1" class="h-12 opacity-75 hover:opacity-100 transition duration-300">
+                    <img src="https://placehold.co/100x50/e0e0e0/333333?text=Logo+2" alt="Client Logo 2" class="h-12 opacity-75 hover:opacity-100 transition duration-300">
+                    <img src="https://placehold.co/100x50/e0e0e0/333333?text=Logo+3" alt="Client Logo 3" class="h-12 opacity-75 hover:opacity-100 transition duration-300">
+                    <img src="https://placehold.co/100x50/e0e0e0/333333?text=Logo+4" alt="Client Logo 4" class="h-12 opacity-75 hover:opacity-100 transition duration-300">
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12 reveal-item">Latest Posts</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal-item">
+                    <div class="bg-white rounded-lg overflow-hidden card-shadow hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/400x250/ff6a00/ffffff?text=Blog+Post+1" alt="Blog Post 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">5G Web App Development Tool</h3>
+                            <p class="text-gray-700 text-sm mb-4">
+                                An overview of the latest tools and technologies for 5G web app development.
+                            </p>
+                            <a href="#" class="text-primary-orange hover:underline">Read More <i class="fas fa-arrow-right text-sm"></i></a> </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden card-shadow hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/400x250/ff6a00/ffffff?text=Blog+Post+2" alt="Blog Post 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Misconceptions About Web Development</h3>
+                            <p class="text-gray-700 text-sm mb-4">
+                                Debunking some common misconceptions in the world of web development.
+                            </p>
+                            <a href="#" class="text-primary-orange hover:underline">Read More <i class="fas fa-arrow-right text-sm"></i></a> </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden card-shadow hover:scale-105 transition duration-300">
+                        <img src="https://placehold.co/400x250/ff6a00/ffffff?text=Blog+Post+3" alt="Blog Post 3" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">5 Things to Know About UI/UX</h3>
+                            <p class="text-gray-700 text-sm mb-4">
+                                Essential tips for improving UI/UX design.
+                            </p>
+                            <a href="#" class="text-primary-orange hover:underline">Read More <i class="fas fa-arrow-right text-sm"></i></a> </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12 reveal-item">Get In Touch</h2>
+                <div class="max-w-3xl mx-auto bg-gray-100 p-8 rounded-lg card-shadow reveal-item">
+                    <p class="text-center text-gray-700 mb-8">Let's talk about everything!</p>
+                    <form id="contact-form">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Your Name</label>
+                                <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Name" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Your Email</label>
+                                <input type="email" id="email" name="email" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="mb-6">
+                            <label for="subject" class="block text-gray-700 text-sm font-bold mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Subject" required>
+                        </div>
+                        <div class="mb-8">
+                            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="6" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-primary-orange text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-opacity-80 transition duration-300">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="success-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <i class="fas fa-check-circle text-green-500 text-6xl mb-4"></i>
+            <h3 class="text-2xl font-bold mb-2">Message Sent!</h3>
+            <p class="text-gray-700 mb-6">Thank you for your message. I will get back to you soon.</p>
+            <button id="close-modal" class="bg-primary-orange text-white px-6 py-2 rounded-full hover:bg-opacity-80 transition duration-300">Close</button>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-8 text-center">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2023 Yahya. All rights reserved.</p>
+        </div>
+    </footer>
+<script src="jss.js"></script>
+</body>
+</html>
