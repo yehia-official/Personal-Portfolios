@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahia's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-white">
+
+    <div class="abstract-shape-1"></div>
+    <div class="abstract-shape-2"></div>
+    <div class="abstract-shape-3"></div>
+
+    <header class="absolute top-0 left-0 right-0 p-8 flex justify-between items-center z-20">
+        <div class="flex items-center space-x-2">
+            <svg class="w-8 h-8 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zM12 6a6 6 0 00-6 6 1 1 0 01-2 0 8 8 0 0116 0 1 1 0 01-2 0 6 6 0 00-6-6z"/>
+            </svg>
+            <span class="text-xl font-semibold text-white">Yahia</span>
+        </div>
+        <nav>
+            <ul class="flex space-x-6 text-gray-300 text-lg">
+                <li class="nav-item-1 animate-fade-in"><a href="#home" class="hover:text-blue-400 transition duration-300">Home</a></li>
+                <li class="nav-item-2 animate-fade-in"><a href="#about" class="hover:text-blue-400 transition duration-300">About</a></li>
+                <li class="nav-item-3 animate-fade-in"><a href="#portfolio" class="hover:text-blue-400 transition duration-300">Portfolio</a></li>
+                <li class="nav-item-4 animate-fade-in"><a href="#testimonials" class="hover:text-blue-400 transition duration-300">Testimonials</a></li>
+                <li class="nav-item-5 animate-fade-in"><a href="#contact" class="hover:text-blue-400 transition duration-300">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home" class="relative z-10 max-w-7xl w-full flex flex-col md:flex-row items-center justify-between gap-12 md:gap-24 p-8 min-h-[calc(100vh-120px)]">
+        <section class="flex flex-col items-start text-left md:w-1/2">
+            <p class="text-xl text-gray-300 mb-2 animate-fade-slide-up hero-welcome">Welcome to my portfolio!</p>
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-slide-up hero-heading">
+                Hello, my name's <span class="text-blue-400">Yahia.</span>
+            </h1>
+            <p class="text-lg text-gray-300 mb-8 animate-fade-slide-up hero-bio">
+                I'm a visual designer from London. Currently working with @Ideo as a UI Consultant.
+            </p>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-8 w-full sm:w-auto">
+                <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300 w-full sm:w-auto animate-fade-slide-up hero-button-1">
+                    Download CV
+                </button>
+                <button class="border border-white text-white font-semibold py-3 px-6 rounded-full hover:bg-white hover:text-blue-600 transition duration-300 flex items-center justify-center space-x-2 w-full sm:w-auto animate-fade-slide-up hero-button-2">
+                    <span>See my work</span>
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <section class="relative md:w-1/2 flex justify-center items-center hero-image-container animate-scale-in">
+            <div class="image-glow-border w-80 h-80 md:w-96 md:h-96 rounded-full flex items-center justify-center">
+                <div class="w-full h-full rounded-full overflow-hidden">
+                    <img src="me.webp" alt="Yahia's Photo" class="object-cover w-full h-full">
+                </div>
+            </div>
+
+            <div class="absolute top-1/2 -translate-y-1/2 right-0 md:right-0 flex flex-col items-center space-y-4 pr-4">
+                <span class="vertical-text text-sm text-gray-400 mb-4">FOLLOW ME ON</span>
+                <div class="flex flex-col space-y-4">
+                    <a href="#" class="social-icon-wrapper">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.81 12.01c0-3.32-2.69-6.01-6.01-6.01S6.79 8.69 6.79 12.01s2.69 6.01 6.01 6.01 6.01-2.69 6.01-6.01zm-6.01 4.01c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zM22 12c0-5.52-4.48-10-10-10S2 6.48 2 12s4.48 10 10 10 10-4.48 10-10zm-2 0c0 4.41-3.59 8-8 8s-8-3.59-8-8 3.59-8 8-8 8 3.59 8 8z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon-wrapper">
+                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.447 20.452h-3.554v-5.564c0-1.303-.022-2.983-1.814-2.983-1.816 0-2.094 1.416-2.094 2.882v5.665H9.351V9.297h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.464v6.22H20.447zM5.006 7.271a2.406 2.406 0 01-2.406-2.406c0-1.332 1.078-2.406 2.406-2.406s2.406 1.074 2.406 2.406c0 1.332-1.078 2.406-2.406 2.406zm1.751 13.181H3.255V9.297h3.502v13.155z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center space-y-2 text-gray-400 z-10">
+        <span class="text-2xl font-light">0</span>
+        <span class="text-sm">Scroll down</span>
+        <svg class="w-6 h-6 text-gray-400 scroll-down-arrow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+    </div>
+
+    <section id="about" class="w-full max-w-7xl p-8 py-20 text-center">
+        <h2 class="text-4xl font-bold mb-8 text-blue-400">About Me</h2>
+        <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+            Passionate about creating intuitive and beautiful user experiences. With a strong background in visual design and a keen eye for detail, I strive to bridge the gap between aesthetics and functionality. My journey in design has equipped me with a diverse skill set, allowing me to tackle complex problems with innovative solutions. I believe in continuous learning and adapting to new technologies to deliver cutting-edge designs.
+        </p>
+    </section>
+
+    <section id="portfolio" class="w-full max-w-7xl p-8 py-20 text-center bg-gray-900 rounded-lg shadow-xl my-12">
+        <h2 class="text-4xl font-bold mb-8 text-blue-400">My Portfolio</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <img src="https://placehold.co/300x200/4a5568/ffffff?text=Project+1" alt="Project 1" class="rounded-md mb-4 w-full h-48 object-cover">
+                <h3 class="text-xl font-semibold mb-2">Project Title One</h3>
+                <p class="text-gray-400 text-sm">Web Design & Development</p>
+                <a href="#" class="mt-4 inline-block text-blue-400 hover:underline">View Project</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <img src="https://placehold.co/300x200/4a5568/ffffff?text=Project+2" alt="Project 2" class="rounded-md mb-4 w-full h-48 object-cover">
+                <h3 class="text-xl font-semibold mb-2">Project Title Two</h3>
+                <p class="text-gray-400 text-sm">UI/UX Design</p>
+                <a href="#" class="mt-4 inline-block text-blue-400 hover:underline">View Project</a>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                <img src="https://placehold.co/300x200/4a5568/ffffff?text=Project+3" alt="Project 3" class="rounded-md mb-4 w-full h-48 object-cover">
+                <h3 class="text-xl font-semibold mb-2">Project Title Three</h3>
+                <p class="text-gray-400 text-sm">Branding & Identity</p>
+                <a href="#" class="mt-4 inline-block text-blue-400 hover:underline">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="w-full max-w-7xl p-8 py-20 text-center">
+        <h2 class="text-4xl font-bold mb-8 text-blue-400">What Clients Say</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <p class="text-gray-300 mb-4 italic">"Yahia delivered an outstanding design that perfectly captured our vision. Highly recommended!"</p>
+                <p class="font-semibold text-white">- Jane Doe, CEO of Company A</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <p class="text-gray-300 mb-4 italic">"Professional, creative, and a pleasure to work with. Yahia transformed our online presence."</p>
+                <p class="font-semibold text-white">- John Smith, Marketing Director at Company B</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="w-full max-w-7xl p-8 py-20 text-center bg-gray-900 rounded-lg shadow-xl my-12">
+        <h2 class="text-4xl font-bold mb-8 text-blue-400">Get in Touch</h2>
+        <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+            Have a project in mind or just want to say hello? Feel free to reach out! I'm always open to new opportunities and collaborations.
+        </p>
+        <form class="max-w-xl mx-auto space-y-6">
+            <input type="text" placeholder="Your Name" class="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-blue-500">
+            <input type="email" placeholder="Your Email" class="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-blue-500">
+            <textarea placeholder="Your Message" rows="5" class="w-full p-3 rounded-md bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-blue-500"></textarea>
+            <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300">
+                Send Message
+            </button>
+        </form>
+    </section>
+
+    <script src="jss.js"></script>
+</body>
+</html>

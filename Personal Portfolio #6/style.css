@@ -1,0 +1,186 @@
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Adjusted gradient to match the image more closely */
+            background: linear-gradient(135deg, #0a0e1a, #1a0f30); /* Darker blue to subtle dark purple gradient */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column; /* Allow content to stack vertically */
+            align-items: center;
+            justify-content: flex-start; /* Align content to the top initially */
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            position: relative;
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+        }
+
+        /* Abstract shapes styling */
+        .abstract-shape-1 {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background-color: #3b82f6; /* Blue */
+            border-radius: 1rem; /* Rounded corners */
+            transform: rotate(45deg); /* Rotate to make it a diamond/square */
+            top: 15%;
+            left: 10%;
+            opacity: 0.2;
+            filter: blur(10px);
+            z-index: 0;
+            animation: shape-float 8s ease-in-out infinite alternate; /* Animation */
+        }
+
+        .abstract-shape-2 {
+            position: absolute;
+            width: 120px;
+            height: 120px;
+            background-color: #8b5cf6; /* Purple */
+            border-radius: 50%; /* Circle */
+            bottom: 10%;
+            right: 15%;
+            opacity: 0.2;
+            filter: blur(15px);
+            z-index: 0;
+            animation: shape-float 10s ease-in-out infinite alternate-reverse; /* Animation */
+        }
+
+        .abstract-shape-3 {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background-color: #1e3a8a; /* Darker blue */
+            border-radius: 50%;
+            top: 5%;
+            right: 25%;
+            opacity: 0.15;
+            filter: blur(8px);
+            z-index: 0;
+            animation: shape-float 7s ease-in-out infinite alternate; /* Animation */
+        }
+
+        /* Custom styling for the glowing border around the image */
+        .image-glow-border {
+            position: relative;
+            /* Adjusted width and height to create an oval shape closer to the image */
+            width: 320px; /* Adjusted from 80/96 to 320/384 for a larger base */
+            height: 384px; /* Adjusted from 80/96 to 320/384 for a larger base */
+            border-radius: 50%; /* Still using 50% for smooth oval */
+            padding: 4px; /* Space for the glow */
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6); /* Blue to purple gradient for the border */
+            box-shadow: 0 0 40px rgba(59, 130, 246, 0.7); /* Stronger glow */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image-glow-border img {
+            border-radius: 50%; /* Ensure image itself is circular within the oval frame */
+            object-fit: cover; /* Ensure the image covers the area */
+        }
+
+        /* Custom styling for the vertical text */
+        .vertical-text {
+            writing-mode: vertical-lr; /* Vertical text, right to left */
+            transform: rotate(180deg); /* Rotate to make it read top to bottom */
+            text-orientation: mixed; /* Keep characters upright */
+        }
+
+        /* Animation for scroll down indicator */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .scroll-down-arrow {
+            animation: bounce 1.5s infinite;
+        }
+
+        /* Advanced Animations */
+        @keyframes fade-slide-up {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scale-in {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes shape-float {
+            0% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(10px, 10px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+        /* Apply animations with delays */
+        .animate-fade-slide-up {
+            animation: fade-slide-up 0.8s ease-out forwards;
+            opacity: 0; /* Hidden by default */
+        }
+
+        .animate-scale-in {
+            animation: scale-in 1s ease-out forwards;
+            opacity: 0; /* Hidden by default */
+        }
+
+        .animate-fade-in {
+            animation: fade-in 0.6s ease-out forwards;
+            opacity: 0; /* Hidden by default */
+        }
+
+        /* Specific delays for hero section elements */
+        .hero-welcome { animation-delay: 0.2s; }
+        .hero-heading { animation-delay: 0.4s; }
+        .hero-bio { animation-delay: 0.6s; }
+        .hero-button-1 { animation-delay: 0.8s; }
+        .hero-button-2 { animation-delay: 1s; }
+        .hero-image-container { animation-delay: 0.7s; }
+        .nav-item-1 { animation-delay: 0.1s; }
+        .nav-item-2 { animation-delay: 0.2s; }
+        .nav-item-3 { animation-delay: 0.3s; }
+        .nav-item-4 { animation-delay: 0.4s; }
+        .nav-item-5 { animation-delay: 0.5s; }
+
+        /* Social media button specific styling */
+        .social-icon-wrapper {
+            background-color: #1a202c; /* Darker background for the icons */
+            border-radius: 0.5rem; /* Slightly rounded corners */
+            width: 40px; /* Fixed width for icon container */
+            height: 40px; /* Fixed height for icon container */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s ease;
+        }
+        .social-icon-wrapper:hover {
+            background-color: #3b82f6; /* Blue on hover */
+        }
