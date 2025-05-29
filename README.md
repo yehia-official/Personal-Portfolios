@@ -1,7 +1,21 @@
-# Personal Portfolio Design #5
-I'm going to show you how to use modern HTML, CSS, and JavaScript to create a completely responsive Portfolio Design with Scroll To Element and Also Scroll To Top. We'll be using CSS Flexbox, Media queries for our responsive design and CSS  transition for some cool animation effects. Also we have a pulse animation in this code!
+# 🌐 Personal Portfolio Designs
 
-# Screenshot
-Here we have project screenshot :
+This repository contains a collection of clean and responsive personal portfolio templates.  
+Each design is built from scratch with a focus on simplicity, modern layout, and easy customization.
 
-![Image](https://github.com/user-attachments/assets/d8cb8cd6-ea64-4d94-85b3-abf3cb37857c)
+---
+## 📁 Usage
+
+Feel free to explore, clone, and edit the designs to match your own style.  
+All code is beginner-friendly and well-organized for easy customization.
+
+---
+
+## 📬 Contact
+
+If you'd like to connect or have any questions, feel free to reach out:
+
+- Email: yahiamohammedyup@gmail.com  
+- linkedin: [yehia mohammed](https://www.linkedin.com/in/yehia-mohammed-1518a1222/)
+
+---
