@@ -1,0 +1,119 @@
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #151515; /* Very dark grey, slightly darker than before */
+            color: #f0f0f0; /* Lighter grey for general text */
+            line-height: 1.6;
+        }
+
+        /* Custom scrollbar for better aesthetics */
+        body::-webkit-scrollbar {
+            width: 8px;
+        }
+        body::-webkit-scrollbar-track {
+            background: #222222; /* Darker track */
+        }
+        body::-webkit-scrollbar-thumb {
+            background-color: #ff6f00; /* More vibrant orange */
+            border-radius: 20px;
+            border: 2px solid #222222;
+        }
+
+        .section-heading-line {
+            content: '';
+            display: inline-block;
+            width: 30px;
+            height: 2px;
+            background-color: #ff6f00; /* More vibrant orange accent */
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        .skill-rating .star {
+            color: #ff6f00; /* More vibrant orange for filled stars */
+        }
+        .skill-rating .star.empty {
+            color: #3a3a3a; /* Darker grey for empty stars */
+        }
+
+        /* Responsive image styling */
+        .hero-image, .about-image, .project-image {
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            border-radius: 0.75rem; /* Equivalent to rounded-lg */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Equivalent to shadow-xl */
+        }
+
+        /* Smooth scroll for navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom adjustments for specific text sizes and spacing */
+        .hero-subtitle {
+            font-size: 1.6rem; /* Slightly larger for "Hello, My Name Is" */
+        }
+
+        .hero-title {
+            font-size: 4.5rem; /* Larger for "Yahya" */
+            line-height: 1.1; /* Tighter line height */
+        }
+
+        .hero-description {
+            font-size: 1.5rem; /* Larger for "A Creative Freelancer & Full Stack Developer" */
+        }
+
+        @media (min-width: 768px) { /* Medium screens and up */
+            .hero-title {
+                font-size: 5.5rem; /* Even larger on desktop */
+            }
+            .hero-description {
+                font-size: 1.75rem;
+            }
+        }
+
+        /* Animation classes for scroll reveal */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Progress bar styling */
+        .progress-bar-container {
+            background-color: #3a3a3a;
+            border-radius: 9999px; /* Full rounded */
+            height: 8px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            background-color: #ff6f00;
+            height: 100%;
+            border-radius: 9999px;
+            transition: width 1s ease-out; /* Smooth transition for width */
+        }
+
+        /* Back to top button */
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #ff6f00;
+            color: white;
+            padding: 12px 15px;
+            border-radius: 50%;
+            font-size: 24px;
+            display: none; /* Hidden by default */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease;
+            z-index: 1000;
+            cursor: pointer;
+        }
+
+        #back-to-top:hover {
+            background-color: #e66300;
+        }
