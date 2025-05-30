@@ -1,0 +1,44 @@
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Light background as seen in the image */
+            color: #333;
+        }
+        /* Custom styles for the blinking cursor effect */
+        .typing-effect::after {
+            content: '|';
+            animation: blink-caret .75s step-end infinite;
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: black }
+        }
+
+        /* Custom progress bar styling */
+        .progress-bar-container {
+            background-color: #e0e0e0;
+            border-radius: 9999px; /* Full rounded corners */
+            height: 8px;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            background-color: #007bff; /* Blue color for the progress */
+            height: 100%;
+            border-radius: 9999px;
+            transition: width 1.5s ease-out; /* Slower transition for animation */
+            width: 0%; /* Initial state for animation */
+        }
+
+        /* Animation classes for scroll effects */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
