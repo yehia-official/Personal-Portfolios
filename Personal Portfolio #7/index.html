@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yahya - Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <header class="header-custom flex justify-between items-center w-full z-50" id="main-header">
+        <div class="flex items-center space-x-2">
+            <span class="bg-[#ff6b6b] text-white text-lg font-bold px-3 py-1 rounded-full">YM</span>
+            <span class="text-gray-800 text-xl font-bold">Yahya</span>
+        </div>
+        <nav class="hidden md:flex space-x-8 text-gray-700 font-medium">
+            <a href="#about" class="hover:text-[#ff6b6b] transition duration-300">Home</a>
+            <a href="#services" class="hover:text-[#ff6b6b] transition duration-300">Services</a>
+            <a href="#portfolio" class="hover:text-[#ff6b6b] transition duration-300">Portfolio</a>
+            <a href="#about" class="hover:text-[#ff6b6b] transition duration-300 text-[#ff6b6b]">About</a> <a href="#contact" class="hover:text-[#ff6b6b] transition duration-300">Contact</a>
+        </nav>
+        <button class="hidden md:flex items-center bg-[#ff6b6b] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#ff8c8c] transition duration-300">
+            Let's Talk <i class="ml-2 fas fa-arrow-right"></i>
+        </button>
+        <button id="mobile-menu-button" class="md:hidden text-gray-800 text-2xl focus:outline-none">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-64 bg-[#1a1a1a] shadow-lg z-50 p-6 md:hidden">
+        <button id="close-mobile-menu" class="text-white text-3xl absolute top-4 right-4 focus:outline-none">
+            <i class="fas fa-times"></i>
+        </button>
+        <nav class="flex flex-col space-y-6 text-gray-300 font-medium mt-16">
+            <a href="#about" class="hover:text-white transition duration-300 text-lg">Home</a>
+            <a href="#services" class="hover:text-white transition duration-300 text-lg">Services</a>
+            <a href="#portfolio" class="hover:text-white transition duration-300 text-lg">Portfolio</a>
+            <a href="#about" class="hover:text-white transition duration-300 text-lg">About</a>
+            <a href="#contact" class="hover:text-white transition duration-300 text-lg">Contact</a>
+            <button class="bg-[#ff6b6b] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#ff8c8c] transition duration-300 mt-4">
+                Let's Talk
+            </button>
+        </nav>
+    </div>
+
+    <section id="about" class="pt-32 pb-20 bg-[#1a1a1a] text-center md:text-left rounded-b-[50px] shadow-inner">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-center justify-center md:justify-between space-y-10 md:space-y-0 md:space-x-12">
+            <div class="md:w-1/3 flex justify-center fade-in-up">
+                <img src="me.webp" alt="Yahya Profile" class="rounded-full w-64 h-64 object-cover shadow-2xl border-4 border-[#ff6b6b]">
+            </div>
+            <div class="md:w-2/3">
+                <p class="text-[#ff6b6b] text-lg font-semibold mb-2 fade-in-up">About Me</p>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-white fade-in-up" style="transition-delay: 0.2s;">
+                    Get a website that will make a lasting impression on your audience!!!
+                </h1>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-400 text-lg fade-in-up" style="transition-delay: 0.4s;">
+                    <div>
+                        <p><span class="font-semibold text-white">Name:</span> Yahya </p>
+                        <p><span class="font-semibold text-white">Email:</span> example@domain.com</p>
+                    </div>
+                    <div>
+                        <p><span class="font-semibold text-white">Phone:</span> (123) 456-7890</p>
+                        <p><span class="font-semibold text-white">Website:</span> yourwebsite.com</p>
+                    </div>
+                </div>
+                <div class="mt-10 flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4 fade-in-up" style="transition-delay: 0.6s;">
+                    <button class="gradient-button text-white px-8 py-3 rounded-full font-semibold shadow-lg flex items-center justify-center">
+                        Contact Me <i class="ml-2 fas fa-envelope"></i>
+                    </button>
+                    <button class="bg-gray-800 text-gray-300 px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-gray-700 transition duration-300 flex items-center justify-center">
+                        Download CV <i class="ml-2 fas fa-download"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-[#0d0d0d]">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24 text-center">
+            <p class="text-[#ff6b6b] text-lg font-semibold mb-2 fade-in-up">My Work Skills</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 fade-in-up" style="transition-delay: 0.2s;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-[#1a1a1a] p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 scale-in skill-card">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-white text-xl font-semibold">Figma</span>
+                        <span class="text-gray-400">90%</span>
+                    </div>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress-fill" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="bg-[#1a1a1a] p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 scale-in skill-card">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-white text-xl font-semibold">WordPress</span>
+                        <span class="text-gray-400">85%</span>
+                    </div>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress-fill" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="bg-[#1a1a1a] p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 scale-in skill-card">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-white text-xl font-semibold">Web Development</span>
+                        <span class="text-gray-400">95%</span>
+                    </div>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress-fill" data-progress="95"></div>
+                    </div>
+                </div>
+                <div class="bg-[#1a1a1a] p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 scale-in skill-card">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-white text-xl font-semibold">Web Design</span>
+                        <span class="text-gray-400">88%</span>
+                    </div>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress-fill" data-progress="88"></div>
+                    </div>
+                </div>
+                <div class="bg-[#1a1a1a] p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 scale-in skill-card">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-white text-xl font-semibold">Sketch</span>
+                        <span class="text-gray-400">93%</span>
+                    </div>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress-fill" data-progress="93"></div>
+                    </div>
+                </div>
+                <div class="bg-[#1a1a1a] p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 scale-in skill-card">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-white text-xl font-semibold">Xd</span>
+                        <span class="text-gray-400">70%</span>
+                    </div>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress-fill" data-progress="70"></div>
+                    </div>
+                </div>
+                <div class="bg-[#1a1a1a] p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 scale-in skill-card">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-white text-xl font-semibold">Video Editing</span>
+                        <span class="text-gray-400">84%</span>
+                    </div>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress-fill" data-progress="84"></div>
+                    </div>
+                </div>
+                <div class="bg-[#1a1a1a] p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2 scale-in skill-card">
+                    <div class="flex justify-between items-center mb-4">
+                        <span class="text-white text-xl font-semibold">Mobile App</span>
+                        <span class="text-gray-400">90%</span>
+                    </div>
+                    <div class="skill-progress-bar">
+                        <div class="skill-progress-fill" data-progress="90"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-[#1a1a1a]">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24 text-center">
+            <p class="text-[#ff6b6b] text-lg font-semibold mb-2 fade-in-up">My Services</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 fade-in-up" style="transition-delay: 0.2s;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="relative bg-[#0d0d0d] rounded-xl shadow-lg overflow-hidden group scale-in service-card">
+                    <img src="https://placehold.co/600x400/2a2a2a/ffffff?text=UI/UX+Design" alt="UI/UX Design" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 service-card-overlay flex flex-col justify-end p-6">
+                        <h3 class="text-white text-2xl font-bold mb-2">UI/UX Design</h3>
+                        <p class="text-gray-300 text-sm mb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <button class="text-white text-sm font-semibold flex items-center justify-center p-2 rounded-full bg-[#ff6b6b] w-10 h-10 mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative bg-[#0d0d0d] rounded-xl shadow-lg overflow-hidden group scale-in service-card" style="transition-delay: 0.2s;">
+                    <img src="https://placehold.co/600x400/2a2a2a/ffffff?text=Web+Design" alt="Web Design" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 service-card-overlay flex flex-col justify-end p-6">
+                        <h3 class="text-white text-2xl font-bold mb-2">Web Design</h3>
+                        <p class="text-gray-300 text-sm mb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <button class="text-white text-sm font-semibold flex items-center justify-center p-2 rounded-full bg-[#ff6b6b] w-10 h-10 mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="relative bg-[#0d0d0d] rounded-xl shadow-lg overflow-hidden group scale-in service-card" style="transition-delay: 0.4s;">
+                    <img src="https://placehold.co/600x400/2a2a2a/ffffff?text=Web+Development" alt="Web Development" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 service-card-overlay flex flex-col justify-end p-6">
+                        <h3 class="text-white text-2xl font-bold mb-2">Web Development</h3>
+                        <p class="text-gray-300 text-sm mb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <button class="text-white text-sm font-semibold flex items-center justify-center p-2 rounded-full bg-[#ff6b6b] w-10 h-10 mx-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-20 bg-[#0d0d0d]">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24 text-center">
+            <p class="text-[#ff6b6b] text-lg font-semibold mb-2 fade-in-up">My Portfolio</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 fade-in-up" style="transition-delay: 0.2s;">
+                Explore my latest projects and creative works.
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-[#1a1a1a] rounded-xl shadow-lg overflow-hidden group scale-in portfolio-card">
+                    <img src="https://placehold.co/600x400/3a3a3a/ffffff?text=Project+1" alt="Project 1" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="p-6 text-left">
+                        <h3 class="text-white text-xl font-bold mb-2">Project Title One</h3>
+                        <p class="text-gray-400 text-sm">Web Design, UI/UX</p>
+                        <a href="#" class="text-[#ff6b6b] mt-4 inline-block hover:underline">View Project <i class="ml-1 fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="bg-[#1a1a1a] rounded-xl shadow-lg overflow-hidden group scale-in portfolio-card" style="transition-delay: 0.2s;">
+                    <img src="https://placehold.co/600x400/3a3a3a/ffffff?text=Project+2" alt="Project 2" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="p-6 text-left">
+                        <h3 class="text-white text-xl font-bold mb-2">Project Title Two</h3>
+                        <p class="text-gray-400 text-sm">Mobile App Development</p>
+                        <a href="#" class="text-[#ff6b6b] mt-4 inline-block hover:underline">View Project <i class="ml-1 fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="bg-[#1a1a1a] rounded-xl shadow-lg overflow-hidden group scale-in portfolio-card" style="transition-delay: 0.4s;">
+                    <img src="https://placehold.co/600x400/3a3a3a/ffffff?text=Project+3" alt="Project 3" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="p-6 text-left">
+                        <h3 class="text-white text-xl font-bold mb-2">Project Title Three</h3>
+                        <p class="text-gray-400 text-sm">Video Editing, Motion Graphics</p>
+                        <a href="#" class="text-[#ff6b6b] mt-4 inline-block hover:underline">View Project <i class="ml-1 fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="testimonials" class="py-20 bg-[#1a1a1a]">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24 text-center">
+            <p class="text-[#ff6b6b] text-lg font-semibold mb-2 fade-in-up">What My Clients Say</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 fade-in-up" style="transition-delay: 0.2s;">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="relative bg-[#0d0d0d] p-8 rounded-xl shadow-lg text-left scale-in testimonial-card">
+                    <span class="testimonial-quote left">“</span>
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60x60/ff6b6b/ffffff?text=RJ" alt="Robert J." class="rounded-full w-12 h-12 object-cover mr-4">
+                        <div>
+                            <h4 class="text-white font-semibold text-lg">Robert J.</h4>
+                            <div class="text-yellow-500 text-sm">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-base leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <span class="testimonial-quote right">”</span>
+                </div>
+                <div class="relative bg-[#0d0d0d] p-8 rounded-xl shadow-lg text-left scale-in testimonial-card" style="transition-delay: 0.2s;">
+                    <span class="testimonial-quote left">“</span>
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60x60/ff6b6b/ffffff?text=JZ" alt="Jessica Z." class="rounded-full w-12 h-12 object-cover mr-4">
+                        <div>
+                            <h4 class="text-white font-semibold text-lg">Jessica Z.</h4>
+                            <div class="text-yellow-500 text-sm">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-base leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <span class="testimonial-quote right">”</span>
+                </div>
+                <div class="relative bg-[#0d0d0d] p-8 rounded-xl shadow-lg text-left scale-in testimonial-card" style="transition-delay: 0.4s;">
+                    <span class="testimonial-quote left">“</span>
+                    <div class="flex items-center mb-4">
+                        <img src="https://placehold.co/60x60/ff6b6b/ffffff?text=JB" alt="Justin B." class="rounded-full w-12 h-12 object-cover mr-4">
+                        <div>
+                            <h4 class="text-white font-semibold text-lg">Justin B.</h4>
+                            <div class="text-yellow-500 text-sm">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 text-base leading-relaxed">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <span class="testimonial-quote right">”</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-[#0d0d0d]">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24 text-center">
+            <p class="text-[#ff6b6b] text-lg font-semibold mb-2 fade-in-up">Get in Touch</p>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-12 fade-in-up" style="transition-delay: 0.2s;">
+                Have a project in mind? Let's create something great together!
+            </h2>
+
+            <div class="max-w-3xl mx-auto bg-[#1a1a1a] p-8 rounded-xl shadow-lg scale-in">
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                    <div>
+                        <label for="name" class="block text-gray-300 text-sm font-semibold mb-2">Your Name</label>
+                        <input type="text" id="name" name="name" class="w-full p-3 rounded-lg bg-[#0d0d0d] border border-gray-700 focus:outline-none focus:border-[#ff6b6b] text-white" placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-300 text-sm font-semibold mb-2">Your Email</label>
+                        <input type="email" id="email" name="email" class="w-full p-3 rounded-lg bg-[#0d0d0d] border border-gray-700 focus:outline-none focus:border-[#ff6b6b] text-white" placeholder="Enter your email">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label for="subject" class="block text-gray-300 text-sm font-semibold mb-2">Subject</label>
+                        <input type="text" id="subject" name="subject" class="w-full p-3 rounded-lg bg-[#0d0d0d] border border-gray-700 focus:outline-none focus:border-[#ff6b6b] text-white" placeholder="Enter subject">
+                    </div>
+                    <div class="md:col-span-2">
+                        <label for="message" class="block text-gray-300 text-sm font-semibold mb-2">Your Message</label>
+                        <textarea id="message" name="message" rows="5" class="w-full p-3 rounded-lg bg-[#0d0d0d] border border-gray-700 focus:outline-none focus:border-[#ff6b6b] text-white" placeholder="Write your message here..."></textarea>
+                    </div>
+                    <div class="md:col-span-2 text-center">
+                        <button type="submit" class="gradient-button text-white px-8 py-3 rounded-full font-semibold shadow-md hover:shadow-lg transition duration-300">
+                            Send Message <i class="ml-2 fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#1a1a1a] py-16 rounded-t-[50px] shadow-inner">
+        <div class="container mx-auto px-6 md:px-12 lg:px-24 grid grid-cols-1 md:grid-cols-4 gap-12 text-gray-400">
+            <div>
+                <div class="flex items-center space-x-2 mb-4">
+                    <span class="bg-[#ff6b6b] text-white text-lg font-bold px-3 py-1 rounded-full">YK</span>
+                    <span class="text-white text-xl font-bold">Yahya</span>
+                </div>
+                <p class="text-sm leading-relaxed">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-white text-lg font-semibold mb-6">Navigation</h3>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="#about" class="hover:text-white transition duration-300">About Me</a></li>
+                    <li><a href="#services" class="hover:text-white transition duration-300">Services</a></li>
+                    <li><a href="#portfolio" class="hover:text-white transition duration-300">Portfolio</a></li>
+                    <li><a href="#contact" class="hover:text-white transition duration-300">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white text-lg font-semibold mb-6">Contact</h3>
+                <ul class="space-y-3 text-sm">
+                    <li><i class="fas fa-phone-alt mr-2"></i> (123) 456-7890</li>
+                    <li><i class="fas fa-envelope mr-2"></i> info@domain.com</li>
+                    <li><i class="fas fa-map-marker-alt mr-2"></i> Cumilla, 82, Bangladesh</li>
+                    <li><i class="fas fa-clock mr-2"></i> Mon - Fri: 8 AM - 10 PM</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white text-lg font-semibold mb-6">Get the latest information</h3>
+                <form class="flex flex-col space-y-4">
+                    <input type="email" placeholder="Your Email" class="p-3 rounded-lg bg-[#0d0d0d] border border-gray-700 focus:outline-none focus:border-[#ff6b6b] text-white">
+                    <button type="submit" class="gradient-button text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:shadow-lg transition duration-300">
+                        Subscribe
+                    </button>
+                </form>
+                <div class="flex space-x-4 mt-6 text-2xl">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-12 pt-8 border-t border-gray-800 text-center text-sm text-gray-500">
+            <p>Copyright &copy; 2025 Yahya By Roothemes. All Rights Reserved.</p>
+            <div class="mt-2 space-x-4">
+                <a href="#" class="hover:text-white transition duration-300">Terms & Conditions</a>
+                <span class="mx-1">|</span>
+                <a href="#" class="hover:text-white transition duration-300">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scroll-to-top" class="fixed bottom-8 right-8 bg-[#ff6b6b] text-white p-4 rounded-full shadow-lg hover:bg-[#ff8c8c] transition-all duration-300 z-40 opacity-0 transform translate-y-4">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+   <script src="jss.js"></script>
+</body>
+</html>
